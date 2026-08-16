@@ -15,7 +15,7 @@
 
 Users can enter their name and vote for one candidate. Once a voter has voted, the system prevents the same name from voting again.
 
-![Voting Interface](./public/screenshots/sample.png)
+![Voting Interface](./public/images/voting-interface.png)
 
 --
 
