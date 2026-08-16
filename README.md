@@ -1,40 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# VoteHub - Voting Management System
 
-## Getting Started
+![Next.js](https://img.shields.io/badge/Next.js-Pages%20Router-black?style=for-the-badge&logo=next.js)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![TanStack Query](https://img.shields.io/badge/TanStack%20Query-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
+![Lucide React](https://img.shields.io/badge/Lucide%20React-F56565?style=for-the-badge)
+![Bun](https://img.shields.io/badge/Bun-000000?style=for-the-badge&logo=bun&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
-First, run the development server:
+> A modern, responsive voting management system built with Next.js, TypeScript, Tailwind CSS, TanStack Query, and Lucide React.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+--
+## Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Users can enter their name and vote for one candidate. Once a voter has voted, the system prevents the same name from voting again.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+![Voting Interface](./public/screenshots/sample.png)
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+--
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## Project Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**VoteHub** is a responsive voting management application built to demonstrate how a static voting interface can be transformed into a functional web application.
 
-## Learn More
+The project allows users to enter their name, select a candidate, cast a vote, view candidate information, and see updated voting results.
 
-To learn more about Next.js, take a look at the following resources:
+It also includes candidate management, voter tracking, results, responsive navigation, and reusable UI components.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+The project was built as a **frontend-focused application** using browser `localStorage` for data persistence.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Project Goal
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The main goal of this project was to build a practical voting application while gaining hands-on experience with:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+- React component architecture
+- Next.js
+- TypeScript
+- Tailwind CSS
+- TanStack Query
+- Client-side state management
+- Browser localStorage
+- Responsive design
+- Reusable components
+- Modals
+- Forms
+- Navigation
+- User interaction
+- Debugging
+
+Instead of creating only a static UI, the goal was to make the interface interactive and functional.
+
+---
+
+# ✨ Features
+
+## Voting System
+
+Users can:
+
+- Enter their name
+- View available candidates
+- Select a candidate
+- Vote for a candidate
+- See the vote count increase
+- Receive feedback after voting
+- View their voting status
+
+Each voter name can only vote once.
+
+The name comparison is case-insensitive.
+
+For example:
+
+```text
+Rita
+rita
+RITA
