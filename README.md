@@ -15,7 +15,7 @@
 
 Users can enter their name and vote for one candidate. Once a voter has voted, the system prevents the same name from voting again.
 
-![sample](./public/images/sample.png) ![the website like](https://next-js-voting-hub-project.vercel.app/)
+the website like: https://next-js-voting-hub-project.vercel.app/
 
 --
 
